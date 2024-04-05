@@ -1,7 +1,7 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
-using Tutorial.Event;         // MyWindow의 namespace
+using Tutorial.Resource;         // MyWindow의 namespace
 
 
 
@@ -17,9 +17,6 @@ public partial class App : Application
     {
         // Create the startup window
         MyWindow wnd = new MyWindow();
-        // Do stuff here, e.g. to the window
-        wnd.Title = "StartupUri 대체";
-        // Show the window
         wnd.Show();
     }
 
