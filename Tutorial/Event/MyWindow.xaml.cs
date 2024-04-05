@@ -19,10 +19,18 @@ public partial class MyWindow : Window
     public MyWindow()
     {
         InitializeComponent();
+
+        pnlMainGrid.MouseUp += new MouseButtonEventHandler(pnlMainGrid_MouseUp);
+        pnlMainGrid.MouseDown += new MouseButtonEventHandler(pnlMainGrid_MouseDown);
     }
 
     private void pnlMainGrid_MouseUp(object sender, MouseButtonEventArgs e)
     {
         MessageBox.Show("You clicked me at " + e.GetPosition(this).ToString());
+    }    
+
+    private void pnlMainGrid_MouseDown(object sender, MouseButtonEventArgs e)
+    {
+        MessageBox.Show("You mouse downed at " + e.GetPosition(this).ToString());
     }    
 }
