@@ -1,7 +1,7 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
-using Tutorial.Resource;         // MyWindow의 namespace
+using Tutorial.Binding;         // MyWindow의 namespace
 
 
 
