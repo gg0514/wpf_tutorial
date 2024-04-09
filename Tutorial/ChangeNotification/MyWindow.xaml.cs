@@ -9,6 +9,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 
 
@@ -19,12 +21,35 @@ namespace Tutorial.ChangeNotification;
 /// </summary>
 public partial class MyWindow : Window
 {
-    public class User
+
+    public class User : INotifyPropertyChanged
     {
-        public string Name { get; set; }
+        private string name;
+        public string Name
+        {
+            get { return this.name; }
+            set
+            {
+                if (this.name != value)
+                {
+                    this.name = value;
+                    this.NotifyPropertyChanged("Name");
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void NotifyPropertyChanged(string propName)
+        {
+            if (this.PropertyChanged != null)
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+        }
     }
 
-    private List<User> users = new List<User>();
+
+
+    private ObservableCollection<User> users = new ObservableCollection<User>();
 
     public MyWindow()
     {
