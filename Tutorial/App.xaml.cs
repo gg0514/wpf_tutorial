@@ -1,7 +1,9 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
-using Tutorial.ChangeNotification;         // MyWindow의 namespace
+
+
+using Tutorial.Binding;         // MyWindow의 namespace
 
 
 
@@ -16,7 +18,7 @@ public partial class App : Application
     private void Application_Startup(object sender, StartupEventArgs e)
     {
         // Create the startup window
-        MyWindow wnd = new MyWindow();
+        ConverterWindow wnd = new ConverterWindow();
         wnd.Show();
     }
 
