@@ -22,4 +22,12 @@ public partial class MyWindow : Window
 
         this.DataContext = this;
     }
+
+    private void btnUpdateSource_Click(object sender, RoutedEventArgs e)
+    {
+        // Binding Explicit 샘플
+        // TextBox의 TextProperty를 바인딩소스로 지정하고, 업데이트함
+        BindingExpression binding = txtWindowTitle.GetBindingExpression(TextBox.TextProperty);
+        binding.UpdateSource();
+    }
 }
