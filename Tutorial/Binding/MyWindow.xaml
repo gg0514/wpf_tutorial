@@ -8,7 +8,8 @@
         <TextBox Name="txtValue" />
         <WrapPanel Margin="0,10">
             <TextBlock Text="Value: " FontWeight="Bold" />
-            <TextBlock Text="{Binding Path=Text, ElementName=txtValue}" />     <!-- txtValue의 Text속성을 바인딩한다는... -->
+            <!-- TextBlock의 Text와 TextBox의 Text속성을 결합하는... -->
+            <TextBlock Text="{Binding Path=Text, ElementName=txtValue}" />     
         </WrapPanel>
     </StackPanel>
 
