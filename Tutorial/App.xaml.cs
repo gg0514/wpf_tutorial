@@ -177,8 +177,9 @@ public partial class App : Application
 
         //ItemsControlSample wnd = new ItemsControlSample(); 
         //ItemsControlDataBindingSample wnd= new ItemsControlDataBindingSample();
-        ListBoxSample wnd = new ListBoxSample();
-
+        //ListBoxSample wnd = new ListBoxSample();
+        //ListViewSample wnd = new ListViewSample();
+        TreeViewSample wnd = new TreeViewSample();
 
 
         wnd.Show();
