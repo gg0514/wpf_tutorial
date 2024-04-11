@@ -5,6 +5,7 @@ using System.Windows;
 using Tutorial.DataBinding;         // Window의 namespace
 using Tutorial.Commands;
 using Tutorial.Dialogs;
+using Tutorial.User_Controls;
 
 namespace Tutorial;                 // App의 namespace
 
@@ -27,8 +28,7 @@ public partial class App : Application
 
         // 다이얼로그를 여기서 호출하니 문제있음!!
         //InputDialogSample wnd = new InputDialogSample("Please enter your name", "park");
-
-        InputDialogAppSample wnd = new InputDialogAppSample();  
+        //InputDialogAppSample wnd = new InputDialogAppSample();  
 
 
         //*****************************************
@@ -52,6 +52,11 @@ public partial class App : Application
         //StringFormatSample wnd = new StringFormatSample();
         //DataBindingDebuggingSample wnd = new DataBindingDebuggingSample();
 
+
+        //*****************************************
+        // NameSpace : Tutorial.User_Controls
+
+        LimitedInputSample wnd= new LimitedInputSample();   
 
         wnd.Show();
     }
