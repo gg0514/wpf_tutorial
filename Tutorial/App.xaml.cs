@@ -7,6 +7,8 @@ using Tutorial.Commands;
 using Tutorial.Dialogs;
 using Tutorial.User_Controls;
 using Tutorial.Panels;
+using Tutorial.Control_concepts;
+using Tutorial.Basic_controls;
 
 namespace Tutorial;                 // App의 namespace
 
@@ -77,7 +79,24 @@ public partial class App : Application
         //GridColRowSpanAdvanced wnd = new GridColRowSpanAdvanced();
         //GridSplitterSample wnd = new GridSplitterSample();
         //GridContactForm wnd = new GridContactForm();
-        GridContactFormTake2 wnd= new GridContactFormTake2();
+        //GridContactFormTake2 wnd= new GridContactFormTake2();
+
+
+        //*****************************************
+        // NameSpace : Tutorial.Control_concepts
+
+        //ToolTipsSimpleSample wnd = new ToolTipsSimpleSample();
+        //ToolTipsAdvancedSample wnd = new ToolTipsAdvancedSample();
+        //TextFormattingModeSample wnd = new TextFormattingModeSample();
+        //TextRenderingModeSample wnd = new TextRenderingModeSample();    
+        //TabOrderSample wnd = new TabOrderSample();
+        //AccessKeysLabelTargetSample wnd = new AccessKeysLabelTargetSample();
+
+
+        //*****************************************
+        // NameSpace : Tutorial.Basic_controls
+
+        TextBlockSample wnd = new TextBlockSample();    
 
         wnd.Show();
     }
