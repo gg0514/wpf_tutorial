@@ -14,6 +14,7 @@ using Tutorial.Dialogs;
 using Tutorial.Common_interface_controls;
 using Tutorial.Rich_text_controls;
 using Tutorial.Misc_controls;
+using Tutorial.ItemsControl;
 
 namespace Tutorial;                     // App의 namespace
 
@@ -167,7 +168,18 @@ public partial class App : Application
         //SliderSnapToTickSample wnd = new SliderSnapToTickSample();
         //SliderBoundValueSample wnd = new SliderBoundValueSample();
         //SliderValueChangedSample wnd = new SliderValueChangedSample();
-        GroupBoxSample wnd = new GroupBoxSample(); 
+        //GroupBoxSample wnd = new GroupBoxSample(); 
+
+
+
+        //*****************************************
+        // NameSpace : Tutorial.ItemsControl
+
+        //ItemsControlSample wnd = new ItemsControlSample(); 
+        //ItemsControlDataBindingSample wnd= new ItemsControlDataBindingSample();
+        ListBoxSample wnd = new ListBoxSample();
+
+
 
         wnd.Show();
     }
