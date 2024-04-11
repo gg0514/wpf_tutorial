@@ -9,22 +9,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Tutorial.Resource;
+namespace Tutorial.WPF_Application;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
 /// </summary>
-public partial class MyWindow : Window
+public partial class ExtendedResourceSample : Window
 {
-    public MyWindow()
+    public ExtendedResourceSample()
     {
         InitializeComponent();
     }
-
-    private void btnClickMe_Click(object sender, RoutedEventArgs e)
-    {
-        lbResult.Items.Add(pnlMain.FindResource("strPanel").ToString());
-        lbResult.Items.Add(this.FindResource("strWindow").ToString());
-        lbResult.Items.Add(Application.Current.FindResource("strApp").ToString());
-    }    
+  
 }

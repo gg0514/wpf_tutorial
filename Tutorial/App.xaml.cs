@@ -9,6 +9,7 @@ using Tutorial.User_Controls;
 using Tutorial.Panels;
 using Tutorial.Control_concepts;
 using Tutorial.Basic_controls;
+using Tutorial.WPF_Application;
 
 namespace Tutorial;                 // App의 namespace
 
@@ -17,6 +18,12 @@ namespace Tutorial;                 // App의 namespace
 /// </summary>
 public partial class App : Application
 {
+
+    private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+    {
+        MessageBox.Show("Application_DispatcherUnhandledException just occurred: " + e.Exception.Message, "Exception Sample", MessageBoxButton.OK, MessageBoxImage.Error);
+        e.Handled = true;
+    }
 
     private void Application_Startup(object sender, StartupEventArgs e)
     {
@@ -108,7 +115,17 @@ public partial class App : Application
         //CheckBoxSample wnd = new CheckBoxSample();
         //CheckBoxThreeStateSample wnd = new CheckBoxThreeStateSample();
         //RadioButtonSample wnd = new RadioButtonSample();
-        PasswordBoxSample wnd = new PasswordBoxSample();
+        //PasswordBoxSample wnd = new PasswordBoxSample();
+
+
+        //*****************************************
+        // NameSpace : Tutorial.WPF_Application
+
+        //ResourceSample wnd = new ResourceSample();
+        //ExtendedResourceSample wnd = new ExtendedResourceSample();
+        //ResourcesFromCodeBehindSample wnd = new ResourcesFromCodeBehindSample();
+        //ExceptionHandlingSample wnd = new ExceptionHandlingSample();
+        ApplicationCultureSwitchSample wnd = new ApplicationCultureSwitchSample();
 
         wnd.Show();
     }
