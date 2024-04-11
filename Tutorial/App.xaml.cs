@@ -6,6 +6,7 @@ using Tutorial.DataBinding;         // Window의 namespace
 using Tutorial.Commands;
 using Tutorial.Dialogs;
 using Tutorial.User_Controls;
+using Tutorial.Panels;
 
 namespace Tutorial;                 // App의 namespace
 
@@ -53,10 +54,30 @@ public partial class App : Application
         //DataBindingDebuggingSample wnd = new DataBindingDebuggingSample();
 
 
+
         //*****************************************
         // NameSpace : Tutorial.User_Controls
 
-        LimitedInputSample wnd= new LimitedInputSample();   
+        //LimitedInputSample wnd= new LimitedInputSample();   
+
+
+
+        //*****************************************
+        // NameSpace : Tutorial.Panels
+
+        //Canvas wnd = new Canvas();
+        //CanvasZIndex wnd = new CanvasZIndex();  
+        //WrapPanel wnd= new WrapPanel(); 
+        //StackPanel wnd = new StackPanel();
+        //DockPanel wnd= new DockPanel();
+        //Grid wnd = new Grid();
+        //TabularGrid wnd = new TabularGrid();
+        //GridUnits wnd = new GridUnits();
+        //GridColRowSpan wnd = new GridColRowSpan();
+        //GridColRowSpanAdvanced wnd = new GridColRowSpanAdvanced();
+        //GridSplitterSample wnd = new GridSplitterSample();
+        //GridContactForm wnd = new GridContactForm();
+        GridContactFormTake2 wnd= new GridContactFormTake2();
 
         wnd.Show();
     }
