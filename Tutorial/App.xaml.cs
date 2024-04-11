@@ -13,6 +13,7 @@ using Tutorial.Commands;
 using Tutorial.Dialogs;
 using Tutorial.Common_interface_controls;
 using Tutorial.Rich_text_controls;
+using Tutorial.Misc_controls;
 
 namespace Tutorial;                     // App의 namespace
 
@@ -154,8 +155,19 @@ public partial class App : Application
 
         //여기서 문제 있음
         //BlockUIContainerSample wnd = new BlockUIContainerSample();
-        RichTextBoxSample wnd = new RichTextBoxSample();
+        //RichTextBoxSample wnd = new RichTextBoxSample();
 
+
+
+        //*****************************************
+        // NameSpace : Tutorial.Misc_controls
+
+        //BorderSample wnd = new BorderSample();
+        //SliderSample wnd = new SliderSample();
+        //SliderSnapToTickSample wnd = new SliderSnapToTickSample();
+        //SliderBoundValueSample wnd = new SliderBoundValueSample();
+        //SliderValueChangedSample wnd = new SliderValueChangedSample();
+        GroupBoxSample wnd = new GroupBoxSample(); 
 
         wnd.Show();
     }
