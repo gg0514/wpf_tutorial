@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Windows;
+using System.Windows.Controls;
 
 using Tutorial.WPF_Application;        // Window의 namespace
 using Tutorial.Basic_controls;
@@ -11,6 +12,7 @@ using Tutorial.DataBinding;
 using Tutorial.Commands;
 using Tutorial.Dialogs;
 using Tutorial.Common_interface_controls;
+using Tutorial.Rich_text_controls;
 
 namespace Tutorial;                     // App의 namespace
 
@@ -138,7 +140,22 @@ public partial class App : Application
         //MenuWithCommandsSample wnd = new MenuWithCommandsSample();
         //ContextMenuSample wnd = new ContextMenuSample();
         //ContextMenuWithCommandsSample wnd = new ContextMenuWithCommandsSample();
-        ContextMenuManuallyInvokedSample wnd= new ContextMenuManuallyInvokedSample();
+        //ContextMenuManuallyInvokedSample wnd= new ContextMenuManuallyInvokedSample();
+
+
+
+        //*****************************************
+        // NameSpace : Tutorial.Common_interface_controls
+
+        //FlowDocumentScrollViewerSample wnd = new FlowDocumentScrollViewerSample();
+        //FlowDocumentScrollViewerZoomSample wnd = new FlowDocumentScrollViewerZoomSample();
+        //FlowDocumentTextAlignmentSample wnd = new FlowDocumentTextAlignmentSample();
+        //ExtendedFlowDocumentSample wnd = new ExtendedFlowDocumentSample();
+
+        //여기서 문제 있음
+        //BlockUIContainerSample wnd = new BlockUIContainerSample();
+        RichTextBoxSample wnd = new RichTextBoxSample();
+
 
         wnd.Show();
     }
