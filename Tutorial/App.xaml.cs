@@ -96,7 +96,19 @@ public partial class App : Application
         //*****************************************
         // NameSpace : Tutorial.Basic_controls
 
-        TextBlockSample wnd = new TextBlockSample();    
+        //TextBlockSample wnd = new TextBlockSample();    
+        //TextBlockInlineSample wnd = new TextBlockInlineSample();
+        //TextBlockHyperlinkSample wnd = new TextBlockHyperlinkSample();
+        //TextBlockSpanSample wnd = new TextBlockSpanSample();
+        //LabelControlSample wnd = new LabelControlSample();
+        //LabelControlAdvancedSample wnd = new LabelControlAdvancedSample();
+        //TextBoxSample wnd = new TextBoxSample();
+        //TextBoxSelectionSample wnd= new TextBoxSelectionSample(); 
+        //ButtonSample wnd = new ButtonSample();
+        //CheckBoxSample wnd = new CheckBoxSample();
+        //CheckBoxThreeStateSample wnd = new CheckBoxThreeStateSample();
+        //RadioButtonSample wnd = new RadioButtonSample();
+        PasswordBoxSample wnd = new PasswordBoxSample();
 
         wnd.Show();
     }
