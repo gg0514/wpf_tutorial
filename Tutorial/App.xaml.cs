@@ -2,16 +2,17 @@
 using System.Data;
 using System.Windows;
 
-using Tutorial.DataBinding;         // Window의 namespace
+using Tutorial.WPF_Application;        // Window의 namespace
+using Tutorial.Basic_controls;
+using Tutorial.Control_concepts;
+using Tutorial.Panels;
+using Tutorial.User_Controls;
+using Tutorial.DataBinding;         
 using Tutorial.Commands;
 using Tutorial.Dialogs;
-using Tutorial.User_Controls;
-using Tutorial.Panels;
-using Tutorial.Control_concepts;
-using Tutorial.Basic_controls;
-using Tutorial.WPF_Application;
+using Tutorial.Common_interface_controls;
 
-namespace Tutorial;                 // App의 namespace
+namespace Tutorial;                     // App의 namespace
 
 /// <summary>
 /// Interaction logic for App.xaml
@@ -125,7 +126,19 @@ public partial class App : Application
         //ExtendedResourceSample wnd = new ExtendedResourceSample();
         //ResourcesFromCodeBehindSample wnd = new ResourcesFromCodeBehindSample();
         //ExceptionHandlingSample wnd = new ExceptionHandlingSample();
-        ApplicationCultureSwitchSample wnd = new ApplicationCultureSwitchSample();
+        //ApplicationCultureSwitchSample wnd = new ApplicationCultureSwitchSample();
+
+
+
+        //*****************************************
+        // NameSpace : Tutorial.Common_interface_controls
+
+        //MenuSample wnd= new MenuSample();
+        //MenuIconCheckableSample wnd= new MenuIconCheckableSample();
+        //MenuWithCommandsSample wnd = new MenuWithCommandsSample();
+        //ContextMenuSample wnd = new ContextMenuSample();
+        //ContextMenuWithCommandsSample wnd = new ContextMenuWithCommandsSample();
+        ContextMenuManuallyInvokedSample wnd= new ContextMenuManuallyInvokedSample();
 
         wnd.Show();
     }
