@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Audio_and_Video\SpeechSynthesisSample.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Audio_and_Video\SpeechSynthesisSample.xaml" />
+  </ItemGroup>
+
 </Project>

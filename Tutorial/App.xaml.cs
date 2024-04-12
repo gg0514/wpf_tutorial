@@ -15,6 +15,10 @@ using Tutorial.Common_interface_controls;
 using Tutorial.Rich_text_controls;
 using Tutorial.Misc_controls;
 using Tutorial.ItemsControl;
+using Tutorial.Styles;
+using Tutorial.Audio_and_Video;
+using Tutorial.Misc;
+
 
 namespace Tutorial;                     // App의 namespace
 
@@ -179,7 +183,44 @@ public partial class App : Application
         //ItemsControlDataBindingSample wnd= new ItemsControlDataBindingSample();
         //ListBoxSample wnd = new ListBoxSample();
         //ListViewSample wnd = new ListViewSample();
-        TreeViewSample wnd = new TreeViewSample();
+        //TreeViewSample wnd = new TreeViewSample();
+
+
+
+        //*****************************************
+        // NameSpace : Tutorial.Styles
+
+        //SimpleStyleSample wnd = new SimpleStyleSample();
+        //ControlSpecificStyleSample wnd = new ControlSpecificStyleSample();
+        //WindowWideStyleSample wnd = new WindowWideStyleSample();
+        //ExplicitStyleSample wnd = new ExplicitStyleSample();
+        //StyleTriggersSample wnd = new StyleTriggersSample(); 
+        //StyleDataTriggerSample wnd = new StyleDataTriggerSample();
+        //StyleEventTriggerSample wnd = new StyleEventTriggerSample();
+        //StyleMultiTriggerSample wnd = new StyleMultiTriggerSample();
+        //StyleMultiDataTriggerSample wnd = new StyleMultiDataTriggerSample();
+        //StyleTriggerEnterExitActions wnd = new StyleTriggerEnterExitActions();
+
+
+
+        //*****************************************
+        // NameSpace : Tutorial.Audio_and_Video
+
+        //SystemSoundsSample wnd = new SystemSoundsSample();
+        //MediaPlayerAudioSample wnd = new MediaPlayerAudioSample(); 
+
+
+
+        //*****************************************
+        // NameSpace : Tutorial.Misc
+
+        //DispatcherTimerSample wnd = new DispatcherTimerSample();
+        //BackgroundWorkerSample wnd = new BackgroundWorkerSample();  
+        BackgroundWorkerCancellationSample wnd = new BackgroundWorkerCancellationSample();
+
+
+
+
 
 
         wnd.Show();
